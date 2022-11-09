@@ -5,7 +5,7 @@ const BASE_URL = 'https://api.themoviedb.org/3';
 
 export async function moviesApi(movies) {
   try {
-    const response = await axios.get(`${BASE_URL}/search/movie/`, {
+    const response = await axios.get(`${BASE_URL}/search/movie`, {
       params: {
         api_key: API_KEY,
         language: 'en-US',
