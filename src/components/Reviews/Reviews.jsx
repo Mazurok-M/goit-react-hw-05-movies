@@ -10,7 +10,6 @@ export default function Reviews() {
   useEffect(() => {
     reviewsApi(movieId).then(review => setReviews(review));
   }, [movieId]);
-  console.log(reviews.length);
   return (
     <Container>
       <ReviewList>

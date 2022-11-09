@@ -27,8 +27,7 @@ export default function Movies() {
       <Container>
         <Query onSubmit={changeFilter} />
         <List>
-          {results.length > 0 &&
-            movies !== null &&
+          {movies !== null &&
             results.map(results => (
               <li key={results.id}>
                 <Link to={`${results.id}`} state={{ from: location }}>
