@@ -71,7 +71,7 @@ export default function MovieDetails() {
           </li>
         </List>
       </Box>
-      <Suspense fallback={null}>
+      <Suspense fallback={<div>Loading...</div>}>
         <Outlet />
       </Suspense>
     </main>
